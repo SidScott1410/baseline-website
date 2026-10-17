@@ -13,3 +13,7 @@ Once ready to point DNS to GitHub, set **Settings → Pages → Custom domain** 
 The canonical URL, Open Graph/Twitter absolute image URLs, copyable briefing citation, robots sitemap URL and sitemap entry now use `https://www.baselineindex.org`. Configure the custom domain before switching DNS to reduce domain-takeover risk. Do not keep conflicting parked or old-host website records.
 
 Official setup guide: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+## Browser icons and sharing image refresh
+
+Standard root `favicon.ico`, `favicon.png`, `apple-touch-icon.png` and `apple-touch-icon-precomposed.png` supplement explicit versioned icon links. The OG/Twitter image is temporarily served from this repository through `raw.githubusercontent.com` over HTTPS while the custom-domain certificate is pending. The same image also lives at `assets/og-baseline-v3.png`. Once domain HTTPS works, restore the OG/Twitter URL to `https://www.baselineindex.org/assets/og-baseline-v3.png`. The website design and visible content are unchanged.
